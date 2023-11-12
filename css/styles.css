@@ -1,14 +1,14 @@
 :root {
   --color-primary-light: #faf4ea;
-  --color-primary-dark: #31261A;
+  --color-primary-dark: #31261a;
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
-
+  --color-data-protected: #A18268;
 }
 
 /* Base */
 body {
-  color: var(--color-primary-dark)
+  color: var(--color-primary-dark);
 }
 
 ul {
@@ -29,7 +29,7 @@ ul {
   color: var(--color-brand-dark);
 }
 
-/* Link */
+/* Header-Link */
 .link {
   color: var(--color-primary-light);
 }
@@ -55,5 +55,24 @@ ul {
 
 .section-title .accent {
   color: var(--color-brand-dark);
+}
 
+/* Accents in p in sections */
+.accent {
+  color: var(--color-brand-light);
+}
+
+/* Names of formats */
+.formats-names {
+  color: var(--color-primary-light);
+}
+
+/* Footer-link */
+.footer-link {
+  color: var(--color-primary-light);
+}
+
+/* Data`s ptotected */
+.data-protected {
+  color: var(--color-data-protected);
 }
