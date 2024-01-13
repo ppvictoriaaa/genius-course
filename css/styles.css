@@ -9,6 +9,11 @@
 /* Base */
 body {
   color: var(--color-primary-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  /* font-height/font-weight*/
+  line-height: 1.5;
 }
 
 ul {
@@ -22,25 +27,33 @@ ul {
   border-radius: 8px;
   color: var(--color-primary-light);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button:hover {
   background-color: transparent;
   color: var(--color-brand-dark);
+  
 }
 
 /* Header-Link */
 .link {
   color: var(--color-primary-light);
+  text-decoration: none;
+  
 }
 
 .link:hover {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--color-primary-light);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
 }
 
 .hero-title .accent {
@@ -53,14 +66,15 @@ ul {
   background-color: var(--color-brand-light);
 }
 
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
 .section-title .accent {
   color: var(--color-brand-dark);
 }
 
-/* Accents in p in sections */
-.accent {
-  color: var(--color-brand-light);
-}
 
 /* Names of formats */
 .formats-names {
@@ -70,9 +84,21 @@ ul {
 /* Footer-link */
 .footer-link {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 /* Data`s ptotected */
 .data-protected {
   color: var(--color-data-protected);
 }
+
+/* Traditions section */
+.traditions-text .brand {
+  text-transform: uppercase;
+}
+
+.traditions-text span {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
