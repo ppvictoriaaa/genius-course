@@ -4,6 +4,8 @@
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
   --color-data-protected: #a18268;
+  --color-brand-decor: rgb(207, 207, 188);
+  --color-secondary-dark: rgb(162, 130, 104);
 }
 
 /* Base */
@@ -12,6 +14,7 @@
 }
 body {
   margin: 0;
+  background: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -55,6 +58,20 @@ ul {
 
 .section {
   padding: 48px 0;
+}
+
+.section-title {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
 }
 
 /* Button */
@@ -112,6 +129,10 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0;
+  background-image: url("../images/hero-section-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -144,24 +165,6 @@ ul {
   font-weight: 300;
 }
 
-.section-title {
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1.3;
-}
-
-.section-title .accent {
-  color: var(--color-brand-dark);
-}
-
-.traditions-section {
-  padding-top: 96px;
-}
-
-.traditions-title {
-  margin-bottom: 42px;
-}
-
 /* Formats section */
 .format-title {
   color: var(--color-primary-light);
@@ -180,15 +183,20 @@ ul {
 }
 
 .format-card {
+  height: 444px;
   border: 1px solid lightgray; /* remove*/
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.208%,
+    rgba(49, 38, 26, 0.71) 72.917%,
+    var(--color-primary-dark) 100%
+  );
   border-radius: 16px;
-  background: gray;
   padding: 24px;
 }
 
 .formats-item {
-  flex-basis: 
-  calc((100% - 40px) / 3);
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 .formats-list {
@@ -197,28 +205,15 @@ ul {
   flex-wrap: wrap;
 }
 
-/* Footer-link */
-.footer-link {
-  color: var(--color-primary-light);
-  text-decoration: none;
-  margin-bottom: 16px;
-}
-
-.footer-link-address {
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--color-primary-light);
-  text-decoration: none;
-  font-style: normal;
-  margin-bottom: 16px;
-}
-
-/* Data`s ptotected */
-.data-protected {
-  color: var(--color-data-protected);
-}
-
 /* Traditions section */
+
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
 
 .traditions-container {
   display: flex;
@@ -253,12 +248,27 @@ ul {
   font-weight: 600;
 }
 
+.chefs-title::after,
+.chefs-title::before {
+  display: block;
+  width: 352px;
+  height: 0;
+  border: 2px solid var(--color-brand-decor);
+  content: "";
+}
+
 .chefs-title {
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  max-width: 520px;
 }
 
 .chef-paragraph {
   margin-bottom: 42px;
+}
+
+.chef-image {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px  16px 0 0 var(--color-primary-light), -16px  16px 0 2px var(--color-secondary-dark);
 }
 
 /* Contacts-section */
@@ -273,4 +283,33 @@ ul {
 
 .contact-paragraph {
   margin-bottom: 16px;
+}
+
+/* Footer */
+.footer {
+  background-image: url("../images/background-footer.png");
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.footer-link-address {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 16px;
+}
+
+/* Data`s ptotected */
+.data-protected {
+  color: var(--color-data-protected);
 }
