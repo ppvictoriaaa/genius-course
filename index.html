@@ -14,22 +14,30 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-          <a href="/">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-          </a>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Наші традиції</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats-section">Формати</a></li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li>
+                <a class="link" href="#chefs-section">Шеф-кухарі</a>
+              </li>
+              <li>
+                <a class="link" href="#formats-section">Формати</a>
+              </li>
+              <li>
+                <a class="link" href="#contacts-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
       <!-- order call -->
     </header>
@@ -41,7 +49,7 @@
           </h1>
         </div>
       </section>
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list">
@@ -53,20 +61,28 @@
       </section>
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <h2 class="traditions-title section-title">Новий формат традицій</h2>
-          <p class="traditions-text">
-            <span class="brand uppercase">shop bakery</span> — це пекарня, яка
-            взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів.
-          </p>
-          <p class="traditions-text">
-            Ми працюємо як найвідоміші мережі —
-            <span class="brand">5 хвилин і замовлення готове</span>. А ще у
-            наших пекарень стильний дизайн та висока якість обслуговування!
-          </p>
-          <img
-            src="./images/backer-man.jpg"
-            alt="Чоловік пекар дивиться на батони з посмішкою" />
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="traditions-title section-title">
+                Новий формат традицій
+              </h2>
+              <p class="first-traditions-text traditions-text">
+                <span class="brand uppercase">shop bakery</span> — це пекарня,
+                яка взяла все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів.
+              </p>
+              <p class="traditions-text limited">
+                Ми працюємо як найвідоміші мережі —
+                <span class="brand">5 хвилин і замовлення готове</span>. А ще у
+                наших пекарень стильний дизайн та висока якість обслуговування!
+              </p>
+            </div>
+            <div class="traditions-photo">
+              <img
+              src="./images/backer-man.jpg"
+              alt="Чоловік пекар дивиться на батони з посмішкою" />
+            </div>
+          </div>
         </div>
       </section>
       <section class="section" id="chefs-section">
@@ -78,16 +94,18 @@
             <li>
               <article>
                 <h3 class="chef-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+                <p class="chef-paragraph">Привіт, я Настя!</p>
+                <p class="chef-paragraph">
+                  Вже 10 років, я втілюю у життя цікаві та смачні ідеї.
+                </p>
                 <p>Я випічу для вас найсмачніщі вироби!</p>
               </article>
             </li>
             <li>
               <article>
                 <h3 class="chef-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
+                <p class="chef-paragraph">Привіт, я Влад!</p>
+                <p class="chef-paragraph">
                   Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
                   любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
                 </p>
@@ -100,9 +118,9 @@
       <section class="section" id="formats-section">
         <div class="container">
           <h2 class="formats-title section-title">Формати</h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="formats-list">
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 lang="en" class="format-title">Walrus</h3>
                 <div class="formats-text">
                   <p>Площа: до 120 м2</p>
@@ -115,8 +133,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 lang="en" class="format-title">Horseshoe</h3>
                 <div class="formats-text">
                   <p>Площа: до 25 м2</p>
@@ -126,8 +144,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 lang="en" class="format-title">Handlebar</h3>
                 <div class="formats-text">
                   <p>Площа: до 15 м2</p>
@@ -145,8 +163,11 @@
           <h2 class="contacts-title section-title">
             Приєднуйся до мережі пекарень
           </h2>
-          <p class="accent">Заповни форму, щоб ми звʼязались з тобою!</p>
-          <iframe class="contacts-map"
+          <p class="contact-paragraph accent">
+            Заповни форму, щоб ми звʼязались з тобою!
+          </p>
+          <iframe
+            class="contacts-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699717413282!5m2!1suk!2sua"
             width="603"
             height="595"

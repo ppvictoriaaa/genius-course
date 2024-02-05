@@ -33,6 +33,8 @@ p {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -72,7 +74,32 @@ ul {
   color: var(--color-brand-dark);
 }
 
-/* Header-Link */
+/* Header */
+
+.header {
+  background: gray;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
@@ -80,7 +107,6 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
 
 /* Hero section */
@@ -100,10 +126,17 @@ ul {
   color: var(--color-brand-light);
 }
 
-/* Advantades list */
+/* Advantades section */
+.advantages-section {
+  background-color: var(--color-brand-light);
+  padding: 16px 0;
+}
+
 .advantages-list {
   color: var(--color-primary-light);
-  background-color: var(--color-brand-light);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .advantages-item {
@@ -146,10 +179,29 @@ ul {
   margin-bottom: 80px;
 }
 
+.format-card {
+  border: 1px solid lightgray; /* remove*/
+  border-radius: 16px;
+  background: gray;
+  padding: 24px;
+}
+
+.formats-item {
+  flex-basis: 
+  calc((100% - 40px) / 3);
+}
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 /* Footer-link */
 .footer-link {
   color: var(--color-primary-light);
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .footer-link-address {
@@ -158,6 +210,7 @@ ul {
   color: var(--color-primary-light);
   text-decoration: none;
   font-style: normal;
+  margin-bottom: 16px;
 }
 
 /* Data`s ptotected */
@@ -166,6 +219,13 @@ ul {
 }
 
 /* Traditions section */
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -173,6 +233,17 @@ ul {
 
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+
+.traditions-text.limited {
+  max-width: 340px;
+}
+
+.first-traditions-text {
+  margin-bottom: 42px;
+}
+.traditions-content {
+  max-width: 710px;
 }
 
 /* Chefs-section */
@@ -186,6 +257,10 @@ ul {
   margin-bottom: 80px;
 }
 
+.chef-paragraph {
+  margin-bottom: 42px;
+}
+
 /* Contacts-section */
 .contacts-title {
   margin-bottom: 16px;
@@ -194,4 +269,8 @@ ul {
 .contacts-map {
   width: 100%;
   max-width: 603;
+}
+
+.contact-paragraph {
+  margin-bottom: 16px;
 }
